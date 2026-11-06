@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_titre_mr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Douane Temporelle"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tv_label_nom_mr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom du voyageur" />
+
+        <EditText android:minHeight="48dp" android:minHeight="48dp"
+            android:id="@+id/et_nom_mr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Ex : Marty McFly" />
+
+        <TextView
+            android:id="@+id/tv_label_naissance_mr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Année de naissance" />
+
+        <EditText android:minHeight="48dp" android:minHeight="48dp"
+            android:id="@+id/et_naissance_mr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ex : 1990" />
+
+        <TextView
+            android:id="@+id/tv_label_destination_mr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Année de destination" />
+
+        <EditText android:minHeight="48dp" android:minHeight="48dp"
+            android:id="@+id/et_destination_mr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ex : 2050" />
+
+        <TextView
+            android:id="@+id/tv_label_motif_mr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Motif du voyage" />
+
+        <RadioGroup
+            android:id="@+id/rg_motif_mr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_tourisme_mr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Tourisme" />
+
+            <RadioButton
+                android:id="@+id/rb_modification_mr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modification du passé" />
+
+            <RadioButton
+                android:id="@+id/rb_fuite_mr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuite" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_inspecter_mr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Inspecter le profil" />
+
+    </LinearLayout>
+</ScrollView>
