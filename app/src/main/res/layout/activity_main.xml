@@ -54,6 +54,7 @@
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:inputType="number"
+            android:maxLength="4"
             android:hint="Ex : 1990" />
 
         <!-- عنوان حقل سنة الوجهة -->
@@ -71,6 +72,7 @@
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:inputType="number"
+            android:maxLength="4"
             android:hint="Ex : 2050" />
 
         <!-- عنوان قسم سبب السفر -->

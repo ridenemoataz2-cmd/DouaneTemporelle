@@ -40,6 +40,16 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 return;
             }
+            // تحويل السنتين إلى أرقام، وإذا فشل التحويل نعرض رسالة ونتوقف
+            int anneeNaissance;
+            int anneeDestination;
+            try {
+                intent.putExtra(Cles.anneeNaissance(), anneeNaissance);
+                intent.putExtra(Cles.anneeDestination(), anneeDestination);
+            } catch (NumberFormatException e) {
+                Toast.makeText(this, "Année invalide", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
             // معرفة زر الراديو المختار لتحديد سبب السفر
             String motif;
@@ -57,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
 
             // إرسال البيانات بمفاتيح مبنية من الصنف Cles ولا نكتب المفاتيح يدوياً
             intent.putExtra(Cles.nomVoyageur(), nom);
-            intent.putExtra(Cles.anneeNaissance(), Integer.parseInt(naissance));
-            intent.putExtra(Cles.anneeDestination(), Integer.parseInt(destination));
+            intent.putExtra(Cles.anneeNaissance(), intent.putExtra(Cles.anneeNaissance(), anneeNaissance);
+            intent.putExtra(Cles.anneeDestination(), intent.putExtra(Cles.anneeDestination(), anneeDestination);
             intent.putExtra(Cles.motif(), motif);
 
             // تشغيل الشاشة رقم 2
