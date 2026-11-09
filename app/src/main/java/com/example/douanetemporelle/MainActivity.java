@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Année invalide", Toast.LENGTH_SHORT).show();
                 return;
             }
+            // منع سنة وجهة أصغر من سنة الميلاد لأن العمر الزمني يصبح سالباً
+            if (anneeDestination < anneeNaissance) {
+                Toast.makeText(this, "L'année de destination doit être après la naissance",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
 
             // معرفة زر الراديو المختار لتحديد سبب السفر
             String motif;
