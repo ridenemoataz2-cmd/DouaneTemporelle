@@ -13,3 +13,11 @@ Mini-projet Android (DS 1) : poste de douane pour voyageurs du temps.
 
 ## Règle spéciale
 Si le motif est "Modification du passé" et que la différence entre l'année de destination et l'année de naissance est un nombre premier, le bouton Approuver est désactivé.
+
+## Captures d'écran
+![Formulaire](screenshots/form.jpg)
+![Erreur de saisie](screenshots/form_erreur.jpg)
+![Passeport](screenshots/passeport.jpg)
+![Bouton Approuver désactivé](screenshots/passeport_desactive.jpg)
+![Verdict approuvé](screenshots/verdict_vert.jpg)
+![Verdict refusé](screenshots/verdict_rouge.jpg)
