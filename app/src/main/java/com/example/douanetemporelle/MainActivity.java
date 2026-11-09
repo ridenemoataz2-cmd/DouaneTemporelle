@@ -40,16 +40,18 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 return;
             }
+
             // تحويل السنتين إلى أرقام، وإذا فشل التحويل نعرض رسالة ونتوقف
             int anneeNaissance;
             int anneeDestination;
             try {
-                intent.putExtra(Cles.anneeNaissance(), anneeNaissance);
-                intent.putExtra(Cles.anneeDestination(), anneeDestination);
+                anneeNaissance = Integer.parseInt(naissance);
+                anneeDestination = Integer.parseInt(destination);
             } catch (NumberFormatException e) {
                 Toast.makeText(this, "Année invalide", Toast.LENGTH_SHORT).show();
                 return;
             }
+
             // منع سنة وجهة أصغر من سنة الميلاد لأن العمر الزمني يصبح سالباً
             if (anneeDestination < anneeNaissance) {
                 Toast.makeText(this, "L'année de destination doit être après la naissance",
@@ -73,8 +75,8 @@ public class MainActivity extends AppCompatActivity {
 
             // إرسال البيانات بمفاتيح مبنية من الصنف Cles ولا نكتب المفاتيح يدوياً
             intent.putExtra(Cles.nomVoyageur(), nom);
-            intent.putExtra(Cles.anneeNaissance(), intent.putExtra(Cles.anneeNaissance(), anneeNaissance);
-            intent.putExtra(Cles.anneeDestination(), intent.putExtra(Cles.anneeDestination(), anneeDestination);
+            intent.putExtra(Cles.anneeNaissance(), anneeNaissance);
+            intent.putExtra(Cles.anneeDestination(), anneeDestination);
             intent.putExtra(Cles.motif(), motif);
 
             // تشغيل الشاشة رقم 2
