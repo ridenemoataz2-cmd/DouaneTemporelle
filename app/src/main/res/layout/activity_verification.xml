@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- الجذر LinearLayout أفقي: على اليسار صورة بوزن 0.3 وعلى اليمين RelativeLayout بوزن 0.7 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -8,6 +9,7 @@
     android:background="#F5E9C8"
     android:padding="12dp">
 
+    <!-- الجزء الأيسر: صورة الجواز بوزن 0.3 من عرض الشاشة -->
     <ImageView
         android:id="@+id/img_photo_mr"
         android:layout_width="0dp"
@@ -17,12 +19,14 @@
         android:scaleType="centerInside"
         android:contentDescription="Photo du voyageur" />
 
+    <!-- الجزء الأيمن: RelativeLayout بوزن 0.7 تُرتَّب فيه النصوص والأزرار -->
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.7"
         android:paddingStart="12dp">
 
+        <!-- عنوان الجواز في أعلى الشاشة -->
         <TextView
             android:id="@+id/tv_titre_mr"
             android:layout_width="match_parent"
@@ -32,6 +36,7 @@
             android:textStyle="bold"
             android:textColor="#5B3A00" />
 
+        <!-- اسم المسافر: يوضع تحت العنوان، ونصه يُملأ من الكود -->
         <TextView
             android:id="@+id/tv_nom_mr"
             android:layout_width="match_parent"
@@ -41,6 +46,7 @@
             android:textSize="16sp"
             android:textColor="#000000" />
 
+        <!-- العمر الزمني المحسوب: تحت الاسم -->
         <TextView
             android:id="@+id/tv_age_mr"
             android:layout_width="match_parent"
@@ -50,6 +56,7 @@
             android:textSize="16sp"
             android:textColor="#000000" />
 
+        <!-- سنة الوجهة: تحت العمر -->
         <TextView
             android:id="@+id/tv_destination_mr"
             android:layout_width="match_parent"
@@ -59,6 +66,7 @@
             android:textSize="16sp"
             android:textColor="#000000" />
 
+        <!-- سبب السفر: تحت سنة الوجهة -->
         <TextView
             android:id="@+id/tv_motif_mr"
             android:layout_width="match_parent"
@@ -68,6 +76,7 @@
             android:textSize="16sp"
             android:textColor="#000000" />
 
+        <!-- زر الموافقة: قد يُعطَّل من الكود حسب القاعدة -->
         <Button
             android:id="@+id/btn_approuver_mr"
             android:layout_width="match_parent"
@@ -76,6 +85,7 @@
             android:layout_marginTop="24dp"
             android:text="Approuver le saut temporel" />
 
+        <!-- زر الرفض: يفتح الشاشة رقم 3 بقرار الرفض -->
         <Button
             android:id="@+id/btn_refuser_mr"
             android:layout_width="match_parent"

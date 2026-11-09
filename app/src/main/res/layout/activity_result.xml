@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- الشاشة رقم 3: لون الخلفية يُحدَّد من الكود حسب القرار (أخضر أو أحمر) -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/root_result_mr"
     android:layout_width="match_parent"
@@ -7,6 +8,7 @@
     android:gravity="center"
     android:padding="24dp">
 
+    <!-- نص الرسالة: "Bon voyage" أو رسالة الاعتقال، ويُملأ من الكود -->
     <TextView
         android:id="@+id/tv_message_mr"
         android:layout_width="match_parent"
@@ -16,6 +18,7 @@
         android:textSize="28sp"
         android:textStyle="bold" />
 
+    <!-- زر العودة إلى الاستمارة وإغلاق الشاشات السابقة -->
     <Button
         android:id="@+id/btn_nouveau_mr"
         android:layout_width="wrap_content"
