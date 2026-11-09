@@ -1,7 +1,7 @@
 # Douane Temporelle
 
 ## Membre du groupe
-- Moataz Ridene (3eme BI Groupe 2): (travail individuel)
+- Moataz Ridene (3ème BI, Groupe 2) : travail individuel
 
 ## Description
 Mini-projet Android (DS 1) : poste de douane pour voyageurs du temps.
